@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>HTG Calculator</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+  <link rel="stylesheet" href="code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+
+	<div class="clearfix"></div>
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+		<div class="col-lg-12">
+			<div class="col-sm-12 px-0">
+				<p class="fnt-red">Disclaimer- This calculator is for illustration purposes only. It is not meant to be and accurate description of what will happen for you. This is not investment or financial advice and should not be taken as facts. This is merely a hypothetical illustration assuming you've contributed for the full 600 days with no withdrawal's it is not intended to be 100% accurate. Your use of this calculator is strictly voluntary on your part.</p>
+			</div>
+		</div>
+		<div class="col-lg-12">
+			<form>
+			  <div class="form-group row">
+				<label for="staticEmail" class="col-sm-4 col-form-label">Start Date</label>
+				<div class="col-sm-8">
+				  <input type="text" name="startDate" class="form-control" id="startDate" placeholder="dd/mm/yyyy" value="29/02/2022">
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label for="inputPassword" class="col-sm-4 col-form-label">Starting Membership <span class="fnt-red">*</span></label>
+				<div class="col-sm-8">
+				  <input type="text" name="startingMembership" class="form-control" id="startingMembership" placeholder="Starting Membership" value="1000" onchange="$(this).digits();">
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label for="inputPassword" class="col-sm-4 col-form-label">Membership Rewards 4x </label>
+				<div class="col-sm-8">
+				  <input type="text" name="membershipRewards" readonly class="form-control" id="membershipRewards" placeholder="Membership Rewards 4x" value="3000">
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<div class="col-sm-4">&nbsp;</div>
+				<div class="col-sm-8">
+				  <input type="button" name="submitBtn" class="form-control btn btn-success" id="submitBtn" value="Submit" onclick="setCalculation();">
+				</div>
+			  </div>
+			</form>
+		</div>
+	</div>
+
+	<div class="row pt-3" style="overflow-x: hidden;">
+		<div class="col-lg-12" style="overflow-x: auto;">
+			<table class="table table-striped" border="1">
+			  <thead class="thead-dark">
+				<tr>
+				  <th scope="col">Day</th>
+				  <th scope="col">Month</th>
+				  <th scope="col">Date</th>
+				  <th scope="col">Amount</th>
+				  <th scope="col">Daily Rewards</th>
+				  <th scope="col">Daily Rewards <br/>Running Balance</th>
+				  <th scope="col">Rebuy</th>
+				  <th scope="col">Membership Rewards <br/>Running Balance</th>
+				</tr>
+			  </thead>
+			  <tbody class="rewardTable"></tbody>
+			</table>
+		</div>
+	</div>
+	<!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <div class="loading" style="display:none;">Loading&#8230;</div>
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!--<script src="vendor/jquery/jquery.min.js"></script>-->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
