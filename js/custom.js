@@ -94,7 +94,7 @@ function setCalculation(){
 
 function calcRewards(bonus, myDate, startingMembership, membershipRewards){
 	var arrValues = [];
-	var ribeye = 50;
+	var ribeye = 125;
 	var rebuyPrev = 0;
 	var decimalVal = 0.0;
 	var dailyBonusRaw = startingMembership * theRate;
